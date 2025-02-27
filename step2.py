@@ -52,7 +52,7 @@ for idx, (angleframeshift, image_name) in enumerate(zip(np.linspace(0, 2*np.pi, 
     print(f"done frame {idx + 1:0{digits}d}/{Frames}")
 
 images = [imageio.imread(os.path.join(folderpath, image_name)) for image_name in image_names]
-imageio.mimsave(os.path.join(folderpath, "fractal.gif"), images, "GIF", duration=1.0)
+imageio.mimsave(os.path.join(folderpath, "fractal.gif"), images, "GIF", duration=1.0, loop=0)
 
 for image_name in image_names:
     os.remove(os.path.join(folderpath, image_name))
