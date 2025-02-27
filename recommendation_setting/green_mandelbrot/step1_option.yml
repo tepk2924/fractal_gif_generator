@@ -12,3 +12,6 @@ Yup: 1.125
 
 # Number of iteration
 Iternum: 70
+
+# Type of the fractal
+FractalType: mandelbrot

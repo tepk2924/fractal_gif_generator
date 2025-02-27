@@ -19,4 +19,5 @@ HSVColorSetting:
     Frequency: 3 #Integer Recommended  
     Shift: 1.57 #Float
 
-# Saturation Setting
+ColorCenterX: center
+ColorCenterY: center

@@ -2,4 +2,3 @@ test.py
 *.npy
 *.png
 *.gif
-!recommendation_setting/
