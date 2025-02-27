@@ -1,0 +1,22 @@
+# Number of frames of the gif generating.
+Frames: 33
+
+# Color Setting, defining a sine function of an angle: Average + Deviation*sin(2*pi*Frequency + Shift)
+HSVColorSetting:
+  Hue:
+    Average: 60 #Integer [0, 180); 0 red, 60 green, 120 blue.
+    Deviation: 15 #Integer
+    Frequency: 2 #Integer Recommended  
+    Shift: 0 #Float
+  Saturation:
+    Average: 255 #Integer [0, 256).
+    Deviation: 0 #Integer
+    Frequency: 0 #Integer Recommended  
+    Shift: 0 #Float
+  Value:
+    Average: 150 #Integer [0, 256).
+    Deviation: 105 #Integer
+    Frequency: 3 #Integer Recommended  
+    Shift: 1.57 #Float
+
+# Saturation Setting

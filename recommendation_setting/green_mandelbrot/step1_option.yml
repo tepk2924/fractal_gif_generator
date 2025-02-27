@@ -1,0 +1,14 @@
+# Integer, number of pixels of the gif image you want to generate.
+Img_height: 1440
+Img_width: 2560
+
+# Float, x(Re) and y(Im) coordinates of range of the fractal image.
+# Pro Tip: If you want not to squish the original fractial, make sure you set
+# such that Xright - Xleft : Yup - Ydown == Image_width : Image_height.
+Xleft: -2
+Xright: 2
+Ydown: -1.125
+Yup: 1.125
+
+# Number of iteration
+Iternum: 70
