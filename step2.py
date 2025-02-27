@@ -42,3 +42,9 @@ for idx, (angleframeshift, image_name) in enumerate(zip(np.linspace(0, 2*np.pi, 
     img_np = (cv2.cvtColor(np.concatenate((H, S, V), axis=2), cv2.COLOR_HSV2RGB)*intensity).astype(np.uint8)
     Image.fromarray(img_np, "RGB").save(os.path.join(folderpath, image_name))
     print(f"done frame {idx + 1:0{digits}d}/{Frames}")
+
+images = [imageio.imread(os.path.join(folderpath, image_name)) for image_name in image_names]
+imageio.mimsave(os.path.join(folderpath, "fractal.gif"), images, "GIF", duration=1.0)
+
+for image_name in image_names:
+    os.remove(os.path.join(folderpath, image_name))
